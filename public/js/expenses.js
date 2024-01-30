@@ -117,7 +117,7 @@ function filterByCategory(value) {
 }
 
 async function getData() {
-    data = await fetch('http://localhost/expense-app/expenses/getHistoryJSON')
+    data = await fetch('http://localhost/asistea/expenses/getHistoryJSON')
         .then(res => res.json())
         .then(json => json);
     copydata = [...data];
@@ -160,7 +160,7 @@ function renderData(data) {
                 <td><span class="category" style="background-color: ${item.color}">${item.name}</span></td>
                 <td>${formattedDate}</td>
                 <td class="amount-right">${formattedAmount}</td>
-                <td><a href="http://localhost/expense-app/expenses/delete/${item.id}">Eliminar</a></td>
+                <td><a href="http://localhost/asistea/expenses/delete/${item.id}">Eliminar</a></td>
             </tr>`;
     });
 }
