@@ -7,7 +7,7 @@ ini_set('display_errors', FALSE); // Error/Exception display, use FALSE only in 
 
 ini_set('log_errors', TRUE); // Error/Exception file logging engine.
 
-ini_set("error_log", "/laragon/www/expense-app/errors.log");
+ini_set("error_log", "/laragon/www/asistea/errors.log");
 
 error_log( "Inicio de aplicación web!" );
 
