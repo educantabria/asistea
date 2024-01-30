@@ -39,7 +39,7 @@ btnExpense.addEventListener('click', async e =>{
 });
 
 async function getContent(){
-  const html = await fetch('http://localhost/expense-app/expenses/create').then(res => res.text());
+  const html = await fetch('http://localhost/asistea/expenses/create').then(res => res.text());
   return html;
 }
 
@@ -47,10 +47,9 @@ google.charts.load('current', {'packages':['bar']});
       google.charts.setOnLoadCallback(drawChart);
 
       async function drawChart() {
-        const http = await fetch('http://localhost/expense-app/expenses/getExpensesJSON')
+        const http = await fetch('http://localhost/asistea/expenses/getExpensesJSON')
         .then(json => json.json())
         .then(res => res);
-
         let expenses = [...http];
         expenses.shift();
         console.log(expenses);

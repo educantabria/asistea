@@ -144,9 +144,7 @@ class Expenses extends SessionController{
 
         array_unshift($categoryNames, 'mes');
         array_unshift($categoryColors, 'categorias');
-        /* array_unshift($categoryNames, 'categorias');
-        array_unshift($categoryColors, NULL); */
-
+        
         $months = $this->getDateList();
 
         for($i = 0; $i < count($months); $i++){

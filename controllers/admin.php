@@ -98,7 +98,7 @@ class Admin extends SessionController{
             $repeat[$expense->getCategoryId()]++;
         }
 
-        $categoryMostUsed = max($repeat);
+        $categoryMostUsed = array_keys($repeat, max($repeat))[0];
         $categoryModel = new CategoriesModel();
         $categoryModel->get($categoryMostUsed);
 
@@ -117,9 +117,9 @@ class Admin extends SessionController{
             $repeat[$expense->getCategoryId()]++;
         }
 
-        $categoryMostUsed = min($repeat);
+        $categoryLessUsed = array_keys($repeat, min($repeat))[0];
         $categoryModel = new CategoriesModel();
-        $categoryModel->get($categoryMostUsed);
+        $categoryModel->get($categoryLessUsed);
 
         $category = $categoryModel->getName();
 
