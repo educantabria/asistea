@@ -7,23 +7,33 @@ const scategory = document.querySelector('#scategory');
 const sorts = document.querySelectorAll('th');
 
 sdate.addEventListener('change', e => {
-    const value = e.target.value;
-    if (value === '' || value === null) {
+    const dateValue = e.target.value;
+    const categoryValue = scategory.value;
+    if (dateValue === '' || dateValue === null) {
         copydata = [...data];
         checkForFilters(scategory);
         return;
     }
-    filterByDate(value);
+    if(categoryValue !== '' && categoryValue !== null){
+        filterByDateAndCategory(dateValue, categoryValue)
+    } else {
+        filterByDate(dateValue);
+    }
 });
 
 scategory.addEventListener('change', e => {
-    const value = e.target.value;
-    if (value === '' || value === null) {
+    const categoryValue = e.target.value;
+    const dateValue = sdate.value;
+    if (categoryValue === '' || categoryValue === null) {
         copydata = [...data];
         checkForFilters(sdate);
         return;
     }
-    filterByCategory(value);
+    if(dateValue !== '' && dateValue !== null){
+        filterByDateAndCategory(dateValue, categoryValue)
+    } else {
+        filterByCategory(categoryValue);
+    }
 });
 
 function checkForFilters(object) {
@@ -96,6 +106,17 @@ function compareDate(a, b) {
     if (a.date > b.date) return 1;
     if (b.date > a.date) return -1;
     return 0;
+}
+
+function filterByDateAndCategory(dateValue, categoryValue) {
+    copydata = [...data];
+    const res = copydata.filter(item => {
+        return dateValue == item.date.substr(0, 7);
+    }).filter(item => {
+        return categoryValue == item.name;
+    });
+    copydata = [...res];
+    renderData(res);
 }
 
 function filterByDate(value) {
