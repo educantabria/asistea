@@ -1,23 +1,38 @@
 
 <?php
 
+/**
+ * Clase User que extiende de SessionController.
+ */
 class User extends SessionController{
 
+    /**
+     * Usuario actual.
+     *
+     * @var mixed
+     */
     private $user;
 
+    /**
+     * Constructor de la clase User.
+     */
     function __construct(){
         parent::__construct();
 
         $this->user = $this->getUserSessionData();
         error_log("user " . $this->user->getName());
     }
-
+    /**
+     * Método para renderizar la vista del usuario.
+     */
     function render(){
         $this->view->render('user/index', [
             "user" => $this->user
         ]);
     }
-
+    /**
+     * Método para actualizar el presupuesto del usuario.
+     */
     function updateBudget(){
         if(!$this->existPOST('budget')){
             $this->redirect('user', ['error' => Errors::ERROR_USER_UPDATEBUDGET]);
@@ -39,6 +54,9 @@ class User extends SessionController{
         }
     }
 
+    /**
+     * Método para actualizar el nombre del usuario.
+     */    
     function updateName(){
         if(!$this->existPOST('name')){
             $this->redirect('user', ['error' => Errors::ERROR_USER_UPDATEBUDGET]);
@@ -60,6 +78,9 @@ class User extends SessionController{
         }
     }
 
+    /**
+     * Método para actualizar la contraseña del usuario.
+     */
     function updatePassword(){
         if(!$this->existPOST(['current_password', 'new_password'])){
             $this->redirect('user', ['error' => Errors::ERROR_USER_UPDATEPASSWORD]);
@@ -97,6 +118,9 @@ class User extends SessionController{
         }
     }
 
+    /**
+     * Método para actualizar la foto del usuario.
+     */
     function updatePhoto(){
         if(!isset($_FILES['photo'])){
             $this->redirect('user', ['error' => Errors::ERROR_USER_UPDATEPHOTO]);

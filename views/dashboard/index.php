@@ -32,7 +32,7 @@
                         <div class="card w-100">
                             <div class="total-budget">
                                 <span class="total-budget-text">
-                                    Balance General del Mes    
+                                    Facturación Mensual    
                                 </span>
                             </div>
                             <div class="total-expense">
@@ -53,7 +53,7 @@
                             <div class="total-budget">
                                 <span class="total-budget-text">
                                     de
-                                    <?php echo number_format($user->getBudget(), 2, ',', '.').EURO_SYMBOL . ' mensuales te restan'; ?>
+                                    <?php echo number_format($user->getBudget(), 2, ',', '.').EURO_SYMBOL . ' hasta objetivo'; ?>
                                 </span>
                             </div>
                             <div class="total-expense">
@@ -78,7 +78,7 @@
                         
                         <div class="card w-50">
                             <div class="total-budget">
-                                <span class="total-budget-text">Tu gasto más grande este mes</span>
+                                <span class="total-budget-text">factura mayor importe este mes</span>
                             </div>
                             <div class="total-expense">
                                 <?php
@@ -137,7 +137,7 @@
                         
                         <button class="btn-main" id="new-expense">
                             <i class="material-icons">add</i>
-                            <span>Registrar nuevo gasto</span>
+                            <span>Registrar nueva factura</span>
                         </button>
                         <a href="<?php echo constant('URL'); ?>user#budget-user-container">Definir presupuesto<i class="material-icons">keyboard_arrow_right</i></a>
                     </section>
@@ -162,7 +162,7 @@
                                 </div>
                             <?php
                             }
-                            echo '<div class="more-container"><a href="expenses">Ver todos los gastos<i class="material-icons">keyboard_arrow_right</i></a></div>';
+                            echo '<div class="more-container"><a href="expenses">Ver todas las facturas<i class="material-icons">keyboard_arrow_right</i></a></div>';
                         } 
                      ?>
                     </section>

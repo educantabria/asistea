@@ -1,12 +1,20 @@
 <?php
-
+/**
+ * Clase Admin que extiende de SessionController.
+ */
 class Admin extends SessionController{
 
 
+    /**
+     * Constructor de la clase Admin.
+     */
     function __construct(){
         parent::__construct();
     }
 
+    /**
+     * Renderiza la vista principal del panel de administración con estadísticas.
+     */
     function render(){
         $stats = $this->getStatistics();
 
@@ -15,10 +23,16 @@ class Admin extends SessionController{
         ]);
     }
 
+    /**
+     * Renderiza la vista para la creación de una nueva categoría.
+     */
     function createCategory(){
         $this->view->render('admin/create-category');
     }
 
+    /**
+     * Maneja la creación de una nueva categoría.
+     */
     function newCategory(){
         error_log('Admin::newCategory()');
         if($this->existPOST(['name', 'color'])){
@@ -39,6 +53,11 @@ class Admin extends SessionController{
         }
     }
 
+    /**
+     * Obtiene estadísticas para el panel de administración.
+     *
+     * @return array Arreglo con estadísticas.
+     */
     private function getStatistics(){
         $res = [];
 
@@ -62,7 +81,13 @@ class Admin extends SessionController{
         return $res;
     }
 
-    private function getMaxAmount($expenses){
+    /**
+     * Obtiene el máximo de un conjunto s.
+     *
+     * @param array $expenses Arreglo de gastos.
+     * @return float cantidad  máxima.
+     */    
+     private function getMaxAmount($expenses){
         $max = 0;
         foreach ($expenses as $expense) {
             $max = max($max, $expense->getAmount());
@@ -70,6 +95,12 @@ class Admin extends SessionController{
 
         return $max;
     }
+    /**
+     * Obtiene el mínimo de un conjunto .
+     *
+     * @param array $expenses .
+     * @return float mínimo.
+     */
     private function getMinAmount($expenses){
         $min = $this->getMaxAmount($expenses);
         foreach ($expenses as $expense) {
@@ -79,6 +110,12 @@ class Admin extends SessionController{
         return $min;
     }
 
+     /**
+     * Obtiene el monto promedio de un conjunto.
+     *
+     * @param array $expenses Arreglo de gastos.
+     * @return float promedio.
+     */   
     private function getAverageAmount($expenses){
         $sum = 0;
         foreach ($expenses as $expense) {
@@ -88,6 +125,12 @@ class Admin extends SessionController{
         return ($sum / count($expenses));
     }
 
+    /**
+     * Obtiene la categoría más utilizada en un conjunto.
+     *
+     * @param array $expenses Arreglo de gastos.
+     * @return string Nombre de la categoría más utilizada.
+     */
     private function getCategoryMostUsed($expenses){
         $repeat = [];
 
@@ -107,6 +150,12 @@ class Admin extends SessionController{
         return $category;
     }
 
+    /**
+     * Obtiene la categoría menos utilizada en un conjunto.
+     *
+     * @param array $expenses Arreglo de gastos.
+     * @return string Nombre de la categoría menos utilizada.
+     */
     private function getCategoryLessUsed($expenses){
         $repeat = [];
 

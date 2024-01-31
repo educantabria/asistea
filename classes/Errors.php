@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * Clase Errors para gestionar mensajes de error en la aplicación.
+ */
 class Errors{
        
     //const ERROR_ADMIN_NEWCATEGORY_EXISTS = "El nombre de la categoría ya existe, intenta otra";
@@ -23,9 +25,14 @@ class Errors{
     const ERROR_SIGNUP_NEWUSER_EMPTY             = "a5bcd7089d83f45e17e989fbc86003ed";
     const ERROR_SIGNUP_NEWUSER_EXISTS            = "a74accfd26e06d012266810952678cf3";
 
-
+/**
+ * @var array Lista de mensajes de error asociados a códigos.
+ */
     private $errorsList = [];
 
+ /**
+ * Constructor de la clase. Inicializa la lista de errores.
+ */   
     public function __construct()
     {
         $this->errorsList = [
@@ -50,11 +57,21 @@ class Errors{
             Errors::ERROR_SIGNUP_NEWUSER_EXISTS     => 'El nombre de usuario ya existe, selecciona otro',
         ];
     }
-
+/**
+* Obtiene un mensaje de error asociado a un código.
+*
+* @param string $hash Código de error.
+* @return string Mensaje de error asociado al código.
+*/
     function get($hash){
         return $this->errorsList[$hash];
     }
-
+/**
+* Verifica si un código de error existe en la lista.
+*
+* @param string $key Código de error.
+* @return bool true si el código de error existe, false en caso contrario.
+*/
     function existsKey($key){
         if(array_key_exists($key, $this->errorsList)){
             return true;

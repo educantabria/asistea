@@ -1,114 +1,372 @@
-[30-Jan-2024 22:22:27 UTC] Inicio de aplicación web!
-[30-Jan-2024 23:22:27 Europe/Madrid] SessionController::validateSession()
-[30-Jan-2024 23:22:27 Europe/Madrid] sessionController::getUserSessionData(): asistea
-[30-Jan-2024 23:22:27 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
-[30-Jan-2024 23:22:27 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/logout, url => logout
-[30-Jan-2024 23:22:27 Europe/Madrid] sessionController::isPublic(): currentURL => logout
-[30-Jan-2024 23:22:27 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/logout, url => logout
-[30-Jan-2024 23:22:27 Europe/Madrid] SessionController::validateSession() => no autorizado, redirige al main de cada rol
-[30-Jan-2024 22:22:27 UTC] Inicio de aplicación web!
-[30-Jan-2024 23:22:27 Europe/Madrid] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\asistea\libs\App.php on line 9
-[30-Jan-2024 23:22:27 Europe/Madrid] SessionController::validateSession()
-[30-Jan-2024 23:22:27 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/, url => 
-[30-Jan-2024 23:22:27 Europe/Madrid] sessionController::isPublic(): currentURL => 
-[30-Jan-2024 23:22:27 Europe/Madrid] SessionController::validateSession() public page
-[30-Jan-2024 22:25:24 UTC] Inicio de aplicación web!
-[30-Jan-2024 23:25:24 Europe/Madrid] SessionController::validateSession()
-[30-Jan-2024 23:25:24 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/login/authenticate, url => login
-[30-Jan-2024 23:25:24 Europe/Madrid] sessionController::isPublic(): currentURL => login
-[30-Jan-2024 23:25:24 Europe/Madrid] SessionController::validateSession() redirect al login
-[30-Jan-2024 23:25:24 Europe/Madrid] ExistPOST: Existen parámetros
-[30-Jan-2024 23:25:24 Europe/Madrid] login: inicio
-[30-Jan-2024 23:25:24 Europe/Madrid] login: user id 9
-[30-Jan-2024 23:25:24 Europe/Madrid] login: success
-[30-Jan-2024 23:25:24 Europe/Madrid] Login::authenticate() passed
-[30-Jan-2024 23:25:24 Europe/Madrid] sessionController::initialize(): user: gracobjo
-[30-Jan-2024 23:25:24 Europe/Madrid] sessionController::authorizeAccess(): role: admin
-[30-Jan-2024 22:25:24 UTC] Inicio de aplicación web!
-[30-Jan-2024 23:25:24 Europe/Madrid] SessionController::validateSession()
-[30-Jan-2024 23:25:24 Europe/Madrid] sessionController::getUserSessionData(): gracobjo
-[30-Jan-2024 23:25:24 Europe/Madrid] sessionController::validateSession(): username:gracobjo - role: admin
-[30-Jan-2024 23:25:24 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/admin, url => admin
-[30-Jan-2024 23:25:24 Europe/Madrid] sessionController::isPublic(): currentURL => admin
-[30-Jan-2024 23:25:24 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/admin, url => admin
-[30-Jan-2024 23:25:24 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
-[30-Jan-2024 22:25:27 UTC] Inicio de aplicación web!
-[30-Jan-2024 23:25:27 Europe/Madrid] SessionController::validateSession()
-[30-Jan-2024 23:25:27 Europe/Madrid] sessionController::getUserSessionData(): gracobjo
-[30-Jan-2024 23:25:27 Europe/Madrid] sessionController::validateSession(): username:gracobjo - role: admin
-[30-Jan-2024 23:25:27 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/admin, url => admin
-[30-Jan-2024 23:25:27 Europe/Madrid] sessionController::isPublic(): currentURL => admin
-[30-Jan-2024 23:25:27 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/admin, url => admin
-[30-Jan-2024 23:25:27 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
-[30-Jan-2024 22:27:26 UTC] Inicio de aplicación web!
-[30-Jan-2024 23:27:26 Europe/Madrid] SessionController::validateSession()
-[30-Jan-2024 23:27:26 Europe/Madrid] sessionController::getUserSessionData(): gracobjo
-[30-Jan-2024 23:27:26 Europe/Madrid] sessionController::validateSession(): username:gracobjo - role: admin
-[30-Jan-2024 23:27:26 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/logout, url => logout
-[30-Jan-2024 23:27:26 Europe/Madrid] sessionController::isPublic(): currentURL => logout
-[30-Jan-2024 23:27:26 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/logout, url => logout
-[30-Jan-2024 23:27:26 Europe/Madrid] SessionController::validateSession() => no autorizado, redirige al main de cada rol
-[30-Jan-2024 22:27:26 UTC] Inicio de aplicación web!
-[30-Jan-2024 23:27:26 Europe/Madrid] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\asistea\libs\App.php on line 9
-[30-Jan-2024 23:27:26 Europe/Madrid] SessionController::validateSession()
-[30-Jan-2024 23:27:26 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/, url => 
-[30-Jan-2024 23:27:26 Europe/Madrid] sessionController::isPublic(): currentURL => 
-[30-Jan-2024 23:27:26 Europe/Madrid] SessionController::validateSession() public page
-[30-Jan-2024 22:27:36 UTC] Inicio de aplicación web!
-[30-Jan-2024 23:27:36 Europe/Madrid] SessionController::validateSession()
-[30-Jan-2024 23:27:36 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/login/authenticate, url => login
-[30-Jan-2024 23:27:36 Europe/Madrid] sessionController::isPublic(): currentURL => login
-[30-Jan-2024 23:27:36 Europe/Madrid] SessionController::validateSession() redirect al login
-[30-Jan-2024 23:27:36 Europe/Madrid] ExistPOST: Existen parámetros
-[30-Jan-2024 23:27:36 Europe/Madrid] login: inicio
-[30-Jan-2024 23:27:36 Europe/Madrid] login: user id 5
-[30-Jan-2024 23:27:36 Europe/Madrid] login: success
-[30-Jan-2024 23:27:36 Europe/Madrid] Login::authenticate() passed
-[30-Jan-2024 23:27:36 Europe/Madrid] sessionController::initialize(): user: asistea
-[30-Jan-2024 23:27:36 Europe/Madrid] sessionController::authorizeAccess(): role: user
-[30-Jan-2024 22:27:36 UTC] Inicio de aplicación web!
-[30-Jan-2024 23:27:37 Europe/Madrid] SessionController::validateSession()
-[30-Jan-2024 23:27:37 Europe/Madrid] sessionController::getUserSessionData(): asistea
-[30-Jan-2024 23:27:37 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
-[30-Jan-2024 23:27:37 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/dashboard, url => dashboard
-[30-Jan-2024 23:27:37 Europe/Madrid] sessionController::isPublic(): currentURL => dashboard
-[30-Jan-2024 23:27:37 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/dashboard, url => dashboard
-[30-Jan-2024 23:27:37 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
-[30-Jan-2024 23:27:37 Europe/Madrid] sessionController::getUserSessionData(): asistea
-[30-Jan-2024 23:27:37 Europe/Madrid] Dashboard::constructor() 
-[30-Jan-2024 23:27:37 Europe/Madrid] Dashboard::RENDER() 
-[30-Jan-2024 23:27:37 Europe/Madrid] Dashboard::getExpenses() id = 5
-[30-Jan-2024 23:27:37 Europe/Madrid] ExpensesModel::getByUserIdAndLimit(): count: 5
-[30-Jan-2024 23:27:37 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
-[30-Jan-2024 23:27:37 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
-[30-Jan-2024 23:27:37 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
-[30-Jan-2024 23:27:37 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
-[30-Jan-2024 23:27:37 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
-[30-Jan-2024 23:27:37 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
-[30-Jan-2024 23:27:37 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
-[30-Jan-2024 23:27:37 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
-[30-Jan-2024 23:27:37 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
-[30-Jan-2024 22:27:37 UTC] Inicio de aplicación web!
-[30-Jan-2024 23:27:37 Europe/Madrid] SessionController::validateSession()
-[30-Jan-2024 23:27:37 Europe/Madrid] sessionController::getUserSessionData(): asistea
-[30-Jan-2024 23:27:37 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
-[30-Jan-2024 23:27:37 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses/getExpensesJSON, url => expenses
-[30-Jan-2024 23:27:37 Europe/Madrid] sessionController::isPublic(): currentURL => expenses
-[30-Jan-2024 23:27:37 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses/getExpensesJSON, url => expenses
-[30-Jan-2024 23:27:37 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
-[30-Jan-2024 23:27:37 Europe/Madrid] sessionController::getUserSessionData(): asistea
-[30-Jan-2024 23:27:37 Europe/Madrid] Expenses::constructor() 
-[30-Jan-2024 22:41:41 UTC] Inicio de aplicación web!
-[30-Jan-2024 23:41:41 Europe/Madrid] SessionController::validateSession()
-[30-Jan-2024 23:41:41 Europe/Madrid] sessionController::getUserSessionData(): asistea
-[30-Jan-2024 23:41:41 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
-[30-Jan-2024 23:41:41 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/logout, url => logout
-[30-Jan-2024 23:41:41 Europe/Madrid] sessionController::isPublic(): currentURL => logout
-[30-Jan-2024 23:41:41 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/logout, url => logout
-[30-Jan-2024 23:41:41 Europe/Madrid] SessionController::validateSession() => no autorizado, redirige al main de cada rol
-[30-Jan-2024 22:41:41 UTC] Inicio de aplicación web!
-[30-Jan-2024 23:41:41 Europe/Madrid] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\asistea\libs\App.php on line 9
-[30-Jan-2024 23:41:41 Europe/Madrid] SessionController::validateSession()
-[30-Jan-2024 23:41:41 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/, url => 
-[30-Jan-2024 23:41:41 Europe/Madrid] sessionController::isPublic(): currentURL => 
-[30-Jan-2024 23:41:41 Europe/Madrid] SessionController::validateSession() public page
+[31-Jan-2024 19:51:16 UTC] Inicio de aplicación web!
+[31-Jan-2024 20:51:16 Europe/Madrid] SessionController::validateSession()
+[31-Jan-2024 20:51:16 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 20:51:16 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
+[31-Jan-2024 20:51:16 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/dashboard, url => dashboard
+[31-Jan-2024 20:51:16 Europe/Madrid] sessionController::isPublic(): currentURL => dashboard
+[31-Jan-2024 20:51:16 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/dashboard, url => dashboard
+[31-Jan-2024 20:51:16 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
+[31-Jan-2024 20:51:16 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 20:51:16 Europe/Madrid] Dashboard::constructor() 
+[31-Jan-2024 20:51:16 Europe/Madrid] Dashboard::RENDER() 
+[31-Jan-2024 20:51:16 Europe/Madrid] Dashboard::getExpenses() id = 5
+[31-Jan-2024 20:51:16 Europe/Madrid] ExpensesModel::getByUserIdAndLimit(): count: 5
+[31-Jan-2024 20:51:16 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:51:16 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:51:16 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:51:16 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:51:16 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:51:16 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:51:16 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:51:16 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:51:16 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 19:51:16 UTC] Inicio de aplicación web!
+[31-Jan-2024 20:51:16 Europe/Madrid] SessionController::validateSession()
+[31-Jan-2024 20:51:16 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 20:51:16 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
+[31-Jan-2024 20:51:16 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses/getExpensesJSON, url => expenses
+[31-Jan-2024 20:51:16 Europe/Madrid] sessionController::isPublic(): currentURL => expenses
+[31-Jan-2024 20:51:16 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses/getExpensesJSON, url => expenses
+[31-Jan-2024 20:51:16 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
+[31-Jan-2024 20:51:16 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 20:51:16 Europe/Madrid] Expenses::constructor() 
+[31-Jan-2024 19:54:08 UTC] Inicio de aplicación web!
+[31-Jan-2024 20:54:08 Europe/Madrid] SessionController::validateSession()
+[31-Jan-2024 20:54:08 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 20:54:08 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
+[31-Jan-2024 20:54:08 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/dashboard, url => dashboard
+[31-Jan-2024 20:54:08 Europe/Madrid] sessionController::isPublic(): currentURL => dashboard
+[31-Jan-2024 20:54:08 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/dashboard, url => dashboard
+[31-Jan-2024 20:54:08 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
+[31-Jan-2024 20:54:08 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 20:54:08 Europe/Madrid] Dashboard::constructor() 
+[31-Jan-2024 20:54:08 Europe/Madrid] Dashboard::RENDER() 
+[31-Jan-2024 20:54:08 Europe/Madrid] Dashboard::getExpenses() id = 5
+[31-Jan-2024 20:54:08 Europe/Madrid] ExpensesModel::getByUserIdAndLimit(): count: 5
+[31-Jan-2024 20:54:08 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:54:08 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:54:08 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:54:08 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:54:08 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:54:08 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:54:08 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:54:08 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:54:08 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 19:54:09 UTC] Inicio de aplicación web!
+[31-Jan-2024 20:54:09 Europe/Madrid] SessionController::validateSession()
+[31-Jan-2024 20:54:09 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 20:54:09 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
+[31-Jan-2024 20:54:09 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses/getExpensesJSON, url => expenses
+[31-Jan-2024 20:54:09 Europe/Madrid] sessionController::isPublic(): currentURL => expenses
+[31-Jan-2024 20:54:09 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses/getExpensesJSON, url => expenses
+[31-Jan-2024 20:54:09 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
+[31-Jan-2024 20:54:09 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 20:54:09 Europe/Madrid] Expenses::constructor() 
+[31-Jan-2024 19:55:04 UTC] Inicio de aplicación web!
+[31-Jan-2024 20:55:04 Europe/Madrid] SessionController::validateSession()
+[31-Jan-2024 20:55:04 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 20:55:04 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
+[31-Jan-2024 20:55:04 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/dashboard, url => dashboard
+[31-Jan-2024 20:55:04 Europe/Madrid] sessionController::isPublic(): currentURL => dashboard
+[31-Jan-2024 20:55:04 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/dashboard, url => dashboard
+[31-Jan-2024 20:55:04 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
+[31-Jan-2024 20:55:04 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 20:55:04 Europe/Madrid] Dashboard::constructor() 
+[31-Jan-2024 20:55:04 Europe/Madrid] Dashboard::RENDER() 
+[31-Jan-2024 20:55:04 Europe/Madrid] Dashboard::getExpenses() id = 5
+[31-Jan-2024 20:55:04 Europe/Madrid] ExpensesModel::getByUserIdAndLimit(): count: 5
+[31-Jan-2024 20:55:04 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:55:04 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:55:04 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:55:04 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:55:04 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:55:04 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:55:04 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:55:04 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:55:04 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 19:55:04 UTC] Inicio de aplicación web!
+[31-Jan-2024 20:55:04 Europe/Madrid] SessionController::validateSession()
+[31-Jan-2024 20:55:04 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 20:55:04 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
+[31-Jan-2024 20:55:04 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses/getExpensesJSON, url => expenses
+[31-Jan-2024 20:55:04 Europe/Madrid] sessionController::isPublic(): currentURL => expenses
+[31-Jan-2024 20:55:04 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses/getExpensesJSON, url => expenses
+[31-Jan-2024 20:55:04 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
+[31-Jan-2024 20:55:04 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 20:55:04 Europe/Madrid] Expenses::constructor() 
+[31-Jan-2024 19:57:07 UTC] Inicio de aplicación web!
+[31-Jan-2024 20:57:07 Europe/Madrid] SessionController::validateSession()
+[31-Jan-2024 20:57:07 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 20:57:07 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
+[31-Jan-2024 20:57:07 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/dashboard, url => dashboard
+[31-Jan-2024 20:57:07 Europe/Madrid] sessionController::isPublic(): currentURL => dashboard
+[31-Jan-2024 20:57:07 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/dashboard, url => dashboard
+[31-Jan-2024 20:57:07 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
+[31-Jan-2024 20:57:07 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 20:57:07 Europe/Madrid] Dashboard::constructor() 
+[31-Jan-2024 20:57:07 Europe/Madrid] Dashboard::RENDER() 
+[31-Jan-2024 20:57:07 Europe/Madrid] Dashboard::getExpenses() id = 5
+[31-Jan-2024 20:57:07 Europe/Madrid] ExpensesModel::getByUserIdAndLimit(): count: 5
+[31-Jan-2024 20:57:07 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:57:07 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:57:07 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:57:07 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:57:07 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:57:07 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:57:07 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:57:07 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:57:07 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 19:57:08 UTC] Inicio de aplicación web!
+[31-Jan-2024 20:57:08 Europe/Madrid] SessionController::validateSession()
+[31-Jan-2024 20:57:08 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 20:57:08 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
+[31-Jan-2024 20:57:08 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses/getExpensesJSON, url => expenses
+[31-Jan-2024 20:57:08 Europe/Madrid] sessionController::isPublic(): currentURL => expenses
+[31-Jan-2024 20:57:08 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses/getExpensesJSON, url => expenses
+[31-Jan-2024 20:57:08 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
+[31-Jan-2024 20:57:08 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 20:57:08 Europe/Madrid] Expenses::constructor() 
+[31-Jan-2024 19:58:23 UTC] Inicio de aplicación web!
+[31-Jan-2024 20:58:23 Europe/Madrid] SessionController::validateSession()
+[31-Jan-2024 20:58:23 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 20:58:23 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
+[31-Jan-2024 20:58:23 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/dashboard, url => dashboard
+[31-Jan-2024 20:58:23 Europe/Madrid] sessionController::isPublic(): currentURL => dashboard
+[31-Jan-2024 20:58:23 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/dashboard, url => dashboard
+[31-Jan-2024 20:58:23 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
+[31-Jan-2024 20:58:23 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 20:58:23 Europe/Madrid] Dashboard::constructor() 
+[31-Jan-2024 20:58:23 Europe/Madrid] Dashboard::RENDER() 
+[31-Jan-2024 20:58:23 Europe/Madrid] Dashboard::getExpenses() id = 5
+[31-Jan-2024 20:58:23 Europe/Madrid] ExpensesModel::getByUserIdAndLimit(): count: 5
+[31-Jan-2024 20:58:23 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:58:23 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:58:23 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:58:23 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:58:23 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:58:23 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:58:23 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:58:23 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:58:23 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 19:58:23 UTC] Inicio de aplicación web!
+[31-Jan-2024 20:58:23 Europe/Madrid] SessionController::validateSession()
+[31-Jan-2024 20:58:23 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 20:58:23 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
+[31-Jan-2024 20:58:23 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses/getExpensesJSON, url => expenses
+[31-Jan-2024 20:58:23 Europe/Madrid] sessionController::isPublic(): currentURL => expenses
+[31-Jan-2024 20:58:23 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses/getExpensesJSON, url => expenses
+[31-Jan-2024 20:58:23 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
+[31-Jan-2024 20:58:23 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 20:58:23 Europe/Madrid] Expenses::constructor() 
+[31-Jan-2024 19:59:19 UTC] Inicio de aplicación web!
+[31-Jan-2024 20:59:19 Europe/Madrid] SessionController::validateSession()
+[31-Jan-2024 20:59:19 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 20:59:19 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
+[31-Jan-2024 20:59:19 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/dashboard, url => dashboard
+[31-Jan-2024 20:59:19 Europe/Madrid] sessionController::isPublic(): currentURL => dashboard
+[31-Jan-2024 20:59:19 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/dashboard, url => dashboard
+[31-Jan-2024 20:59:19 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
+[31-Jan-2024 20:59:19 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 20:59:19 Europe/Madrid] Dashboard::constructor() 
+[31-Jan-2024 20:59:19 Europe/Madrid] Dashboard::RENDER() 
+[31-Jan-2024 20:59:19 Europe/Madrid] Dashboard::getExpenses() id = 5
+[31-Jan-2024 20:59:19 Europe/Madrid] ExpensesModel::getByUserIdAndLimit(): count: 5
+[31-Jan-2024 20:59:19 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:59:19 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:59:19 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:59:19 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:59:19 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:59:19 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:59:19 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:59:19 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:59:19 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 19:59:20 UTC] Inicio de aplicación web!
+[31-Jan-2024 20:59:20 Europe/Madrid] SessionController::validateSession()
+[31-Jan-2024 20:59:20 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 20:59:20 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
+[31-Jan-2024 20:59:20 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses/getExpensesJSON, url => expenses
+[31-Jan-2024 20:59:20 Europe/Madrid] sessionController::isPublic(): currentURL => expenses
+[31-Jan-2024 20:59:20 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses/getExpensesJSON, url => expenses
+[31-Jan-2024 20:59:20 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
+[31-Jan-2024 20:59:20 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 20:59:20 Europe/Madrid] Expenses::constructor() 
+[31-Jan-2024 19:59:50 UTC] Inicio de aplicación web!
+[31-Jan-2024 20:59:50 Europe/Madrid] SessionController::validateSession()
+[31-Jan-2024 20:59:50 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 20:59:50 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
+[31-Jan-2024 20:59:50 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses, url => expenses
+[31-Jan-2024 20:59:50 Europe/Madrid] sessionController::isPublic(): currentURL => expenses
+[31-Jan-2024 20:59:50 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses, url => expenses
+[31-Jan-2024 20:59:50 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
+[31-Jan-2024 20:59:50 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 20:59:50 Europe/Madrid] Expenses::constructor() 
+[31-Jan-2024 20:59:50 Europe/Madrid] Expenses::RENDER() 
+[31-Jan-2024 19:59:50 UTC] Inicio de aplicación web!
+[31-Jan-2024 20:59:50 Europe/Madrid] SessionController::validateSession()
+[31-Jan-2024 20:59:50 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 20:59:50 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
+[31-Jan-2024 20:59:50 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses/getHistoryJSON, url => expenses
+[31-Jan-2024 20:59:50 Europe/Madrid] sessionController::isPublic(): currentURL => expenses
+[31-Jan-2024 20:59:50 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses/getHistoryJSON, url => expenses
+[31-Jan-2024 20:59:50 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
+[31-Jan-2024 20:59:50 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 20:59:50 Europe/Madrid] Expenses::constructor() 
+[31-Jan-2024 20:00:15 UTC] Inicio de aplicación web!
+[31-Jan-2024 21:00:15 Europe/Madrid] SessionController::validateSession()
+[31-Jan-2024 21:00:15 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 21:00:15 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
+[31-Jan-2024 21:00:15 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses, url => expenses
+[31-Jan-2024 21:00:15 Europe/Madrid] sessionController::isPublic(): currentURL => expenses
+[31-Jan-2024 21:00:15 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses, url => expenses
+[31-Jan-2024 21:00:15 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
+[31-Jan-2024 21:00:15 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 21:00:15 Europe/Madrid] Expenses::constructor() 
+[31-Jan-2024 21:00:15 Europe/Madrid] Expenses::RENDER() 
+[31-Jan-2024 20:00:15 UTC] Inicio de aplicación web!
+[31-Jan-2024 21:00:15 Europe/Madrid] SessionController::validateSession()
+[31-Jan-2024 21:00:15 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 21:00:15 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
+[31-Jan-2024 21:00:15 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses/getHistoryJSON, url => expenses
+[31-Jan-2024 21:00:15 Europe/Madrid] sessionController::isPublic(): currentURL => expenses
+[31-Jan-2024 21:00:15 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses/getHistoryJSON, url => expenses
+[31-Jan-2024 21:00:15 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
+[31-Jan-2024 21:00:15 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 21:00:15 Europe/Madrid] Expenses::constructor() 
+[31-Jan-2024 20:00:18 UTC] Inicio de aplicación web!
+[31-Jan-2024 21:00:18 Europe/Madrid] SessionController::validateSession()
+[31-Jan-2024 21:00:18 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 21:00:18 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
+[31-Jan-2024 21:00:18 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/dashboard, url => dashboard
+[31-Jan-2024 21:00:18 Europe/Madrid] sessionController::isPublic(): currentURL => dashboard
+[31-Jan-2024 21:00:18 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/dashboard, url => dashboard
+[31-Jan-2024 21:00:18 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
+[31-Jan-2024 21:00:18 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 21:00:18 Europe/Madrid] Dashboard::constructor() 
+[31-Jan-2024 21:00:18 Europe/Madrid] Dashboard::RENDER() 
+[31-Jan-2024 21:00:18 Europe/Madrid] Dashboard::getExpenses() id = 5
+[31-Jan-2024 21:00:18 Europe/Madrid] ExpensesModel::getByUserIdAndLimit(): count: 5
+[31-Jan-2024 21:00:18 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 21:00:18 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 21:00:18 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 21:00:18 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 21:00:18 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 21:00:18 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 21:00:18 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 21:00:18 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 21:00:18 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:00:18 UTC] Inicio de aplicación web!
+[31-Jan-2024 21:00:18 Europe/Madrid] SessionController::validateSession()
+[31-Jan-2024 21:00:18 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 21:00:18 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
+[31-Jan-2024 21:00:18 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses/getExpensesJSON, url => expenses
+[31-Jan-2024 21:00:18 Europe/Madrid] sessionController::isPublic(): currentURL => expenses
+[31-Jan-2024 21:00:18 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses/getExpensesJSON, url => expenses
+[31-Jan-2024 21:00:18 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
+[31-Jan-2024 21:00:18 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 21:00:18 Europe/Madrid] Expenses::constructor() 
+[31-Jan-2024 20:01:43 UTC] Inicio de aplicación web!
+[31-Jan-2024 21:01:43 Europe/Madrid] SessionController::validateSession()
+[31-Jan-2024 21:01:43 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 21:01:43 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
+[31-Jan-2024 21:01:43 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/dashboard, url => dashboard
+[31-Jan-2024 21:01:43 Europe/Madrid] sessionController::isPublic(): currentURL => dashboard
+[31-Jan-2024 21:01:43 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/dashboard, url => dashboard
+[31-Jan-2024 21:01:43 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
+[31-Jan-2024 21:01:43 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 21:01:43 Europe/Madrid] Dashboard::constructor() 
+[31-Jan-2024 21:01:43 Europe/Madrid] Dashboard::RENDER() 
+[31-Jan-2024 21:01:43 Europe/Madrid] Dashboard::getExpenses() id = 5
+[31-Jan-2024 21:01:43 Europe/Madrid] ExpensesModel::getByUserIdAndLimit(): count: 5
+[31-Jan-2024 21:01:43 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 21:01:43 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 21:01:43 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 21:01:43 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 21:01:43 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 21:01:43 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 21:01:43 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 21:01:43 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 21:01:43 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:01:43 UTC] Inicio de aplicación web!
+[31-Jan-2024 21:01:43 Europe/Madrid] SessionController::validateSession()
+[31-Jan-2024 21:01:43 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 21:01:43 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
+[31-Jan-2024 21:01:43 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses/getExpensesJSON, url => expenses
+[31-Jan-2024 21:01:43 Europe/Madrid] sessionController::isPublic(): currentURL => expenses
+[31-Jan-2024 21:01:43 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses/getExpensesJSON, url => expenses
+[31-Jan-2024 21:01:43 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
+[31-Jan-2024 21:01:43 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 21:01:43 Europe/Madrid] Expenses::constructor() 
+[31-Jan-2024 20:04:03 UTC] Inicio de aplicación web!
+[31-Jan-2024 21:04:03 Europe/Madrid] SessionController::validateSession()
+[31-Jan-2024 21:04:03 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 21:04:03 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
+[31-Jan-2024 21:04:03 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/dashboard, url => dashboard
+[31-Jan-2024 21:04:03 Europe/Madrid] sessionController::isPublic(): currentURL => dashboard
+[31-Jan-2024 21:04:03 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/dashboard, url => dashboard
+[31-Jan-2024 21:04:03 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
+[31-Jan-2024 21:04:03 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 21:04:03 Europe/Madrid] Dashboard::constructor() 
+[31-Jan-2024 21:04:03 Europe/Madrid] Dashboard::RENDER() 
+[31-Jan-2024 21:04:03 Europe/Madrid] Dashboard::getExpenses() id = 5
+[31-Jan-2024 21:04:03 Europe/Madrid] ExpensesModel::getByUserIdAndLimit(): count: 5
+[31-Jan-2024 21:04:03 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 21:04:03 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 21:04:03 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 21:04:03 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 21:04:03 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 21:04:03 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 21:04:03 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 21:04:03 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 21:04:03 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[31-Jan-2024 20:04:03 UTC] Inicio de aplicación web!
+[31-Jan-2024 21:04:03 Europe/Madrid] SessionController::validateSession()
+[31-Jan-2024 21:04:03 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 21:04:03 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
+[31-Jan-2024 21:04:03 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses/getExpensesJSON, url => expenses
+[31-Jan-2024 21:04:03 Europe/Madrid] sessionController::isPublic(): currentURL => expenses
+[31-Jan-2024 21:04:03 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses/getExpensesJSON, url => expenses
+[31-Jan-2024 21:04:03 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
+[31-Jan-2024 21:04:03 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 21:04:03 Europe/Madrid] Expenses::constructor() 
+[31-Jan-2024 20:05:07 UTC] Inicio de aplicación web!
+[31-Jan-2024 21:05:07 Europe/Madrid] SessionController::validateSession()
+[31-Jan-2024 21:05:07 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 21:05:07 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
+[31-Jan-2024 21:05:07 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses, url => expenses
+[31-Jan-2024 21:05:07 Europe/Madrid] sessionController::isPublic(): currentURL => expenses
+[31-Jan-2024 21:05:07 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses, url => expenses
+[31-Jan-2024 21:05:07 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
+[31-Jan-2024 21:05:07 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 21:05:07 Europe/Madrid] Expenses::constructor() 
+[31-Jan-2024 21:05:07 Europe/Madrid] Expenses::RENDER() 
+[31-Jan-2024 20:05:07 UTC] Inicio de aplicación web!
+[31-Jan-2024 21:05:07 Europe/Madrid] SessionController::validateSession()
+[31-Jan-2024 21:05:07 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 21:05:07 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
+[31-Jan-2024 21:05:07 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses/getHistoryJSON, url => expenses
+[31-Jan-2024 21:05:07 Europe/Madrid] sessionController::isPublic(): currentURL => expenses
+[31-Jan-2024 21:05:07 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses/getHistoryJSON, url => expenses
+[31-Jan-2024 21:05:07 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
+[31-Jan-2024 21:05:07 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 21:05:07 Europe/Madrid] Expenses::constructor() 
+[31-Jan-2024 20:07:33 UTC] Inicio de aplicación web!
+[31-Jan-2024 21:07:33 Europe/Madrid] SessionController::validateSession()
+[31-Jan-2024 21:07:33 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 21:07:33 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
+[31-Jan-2024 21:07:33 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses, url => expenses
+[31-Jan-2024 21:07:33 Europe/Madrid] sessionController::isPublic(): currentURL => expenses
+[31-Jan-2024 21:07:33 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses, url => expenses
+[31-Jan-2024 21:07:33 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
+[31-Jan-2024 21:07:33 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 21:07:33 Europe/Madrid] Expenses::constructor() 
+[31-Jan-2024 21:07:33 Europe/Madrid] Expenses::RENDER() 
+[31-Jan-2024 20:07:34 UTC] Inicio de aplicación web!
+[31-Jan-2024 21:07:34 Europe/Madrid] SessionController::validateSession()
+[31-Jan-2024 21:07:34 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 21:07:34 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
+[31-Jan-2024 21:07:34 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses/getHistoryJSON, url => expenses
+[31-Jan-2024 21:07:34 Europe/Madrid] sessionController::isPublic(): currentURL => expenses
+[31-Jan-2024 21:07:34 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses/getHistoryJSON, url => expenses
+[31-Jan-2024 21:07:34 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
+[31-Jan-2024 21:07:34 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[31-Jan-2024 21:07:34 Europe/Madrid] Expenses::constructor() 

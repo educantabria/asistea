@@ -118,6 +118,7 @@ class ExpensesModel extends Model implements IModel{
             return false;
         }
     }
+    
     /**
      * Devuelve la suma total de gastos en este mes
      */
@@ -137,6 +138,7 @@ class ExpensesModel extends Model implements IModel{
             return NULL;
         }
     }
+
     /**
      * Obtiene el número de transacciones por mes
      */
@@ -195,7 +197,7 @@ class ExpensesModel extends Model implements IModel{
     }
 
     /**
-     * Obtiene el total de gastos por categoria
+     * Obtiene el total de gastos por categoria en este mes
      */
     function getTotalByCategoryThisMonth($categoryid, $userid){
         error_log("ExpensesModel::getTotalByCategoryThisMonth");
@@ -217,7 +219,7 @@ class ExpensesModel extends Model implements IModel{
     }
 
     /**
-     * Obtiene el número de gastos por id de categoria
+     * Obtiene el número de gastos por id de categoria en este mes
      */
     function getNumberOfExpensesByCategoryThisMonth($categoryid, $userid){
         try{

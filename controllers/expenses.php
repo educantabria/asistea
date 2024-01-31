@@ -1,11 +1,21 @@
 
 <?php
 
+/**
+ * Clase Expenses que extiende de SessionController.
+ */
 class Expenses extends SessionController{
 
 
+    /**
+     * Usuario actual.
+     * @var User
+     */
     private $user;
 
+    /**
+     * Constructor de la clase Expenses.
+     */
     function __construct(){
         parent::__construct();
 
@@ -13,6 +23,9 @@ class Expenses extends SessionController{
         error_log("Expenses::constructor() ");
     }
 
+    /**
+     * Método para renderizar la vista principal de Expenses.
+     */
      function render(){
         error_log("Expenses::RENDER() ");
 
@@ -23,6 +36,9 @@ class Expenses extends SessionController{
         ]);
     }
 
+    /**
+     * Método para agregar un nueva operación.
+     */
     function newExpense(){
         error_log('Expenses::newExpense()');
         if(!$this->existPOST(['title', 'amount', 'category', 'date'])){
@@ -47,7 +63,9 @@ class Expenses extends SessionController{
         $this->redirect('dashboard', ['success' => Success::SUCCESS_EXPENSES_NEWEXPENSE]);
     }
 
-    // new expense UI
+    /**
+     * Método para renderizar la interfaz de usuario para agregar una nueva operación.
+     */
     function create(){
         $categories = new CategoriesModel();
         $this->view->render('expenses/create', [
@@ -56,6 +74,10 @@ class Expenses extends SessionController{
         ]);
     } 
 
+    /**
+     * Método para obtener la lista de identificadores de categorías.
+     * @return array
+     */
     function getCategoryIds(){
         $joinExpensesCategoriesModel = new JoinExpensesCategoriesModel();
         $categories = $joinExpensesCategoriesModel->getAll($this->user->getId());
@@ -68,7 +90,10 @@ class Expenses extends SessionController{
         return $res;
     }
 
-    // crea una lista con los meses donde hay expenses
+    /**
+     * Método para obtener la lista de fechas.
+     * @return array
+     */
     private function getDateList(){
         $months = [];
         $res = [];
@@ -88,7 +113,10 @@ class Expenses extends SessionController{
         return $res;
     }
 
-    // crea una lista con las categorias donde hay expenses
+    /**
+     * Método para obtener la lista de categorías.
+     * @return array
+     */
     private function getCategoryList(){
         $res = [];
         $joinExpensesCategoriesModel = new JoinExpensesCategoriesModel();
@@ -102,7 +130,10 @@ class Expenses extends SessionController{
         return $res;
     }
 
-    // crea una lista con los colores dependiendo de las categorias
+    /**
+     * Método para obtener la lista de colores de las categorías.
+     * @return array
+     */
     private function getCategoryColorList(){
         $res = [];
         $joinExpensesCategoriesModel = new JoinExpensesCategoriesModel();
@@ -117,9 +148,9 @@ class Expenses extends SessionController{
         return $res;
     }
 
-    
-
-    // devuelve el JSON para las llamadas AJAX
+    /**
+     * Método para obtener el historial en formato JSON.
+     */
     function getHistoryJSON(){
         header('Content-Type: application/json');
         $res = [];
@@ -134,6 +165,9 @@ class Expenses extends SessionController{
 
     }
 
+    /**
+     * Método para obtener los datos de operación en formato JSON.
+     */
     function getExpensesJSON(){
         header('Content-Type: application/json');
 
@@ -162,6 +196,12 @@ class Expenses extends SessionController{
         echo json_encode($res);
     }
 
+    /**
+     * Método para obtener el total por mes y categoría.
+     * @param string $date
+     * @param int $categoryid
+     * @return float
+     */
     function getTotalByMonthAndCategory($date, $categoryid){
         $iduser = $this->user->getId();
         $joinExpensesCategoriesModel = new JoinExpensesCategoriesModel();
@@ -171,6 +211,10 @@ class Expenses extends SessionController{
         return $total;
     }
 
+    /**
+     * Método para eliminar una operación.
+     * @param array|null $params
+     */
     function delete($params){
         error_log("Expenses::delete()");
         

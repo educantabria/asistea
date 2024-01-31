@@ -1,29 +1,40 @@
-
 <?php
 
-
-
-class Signup extends SessionController{
-
-    function __construct(){
+/**
+ * Clase Signup que extiende de SessionController.
+ */
+class Signup extends SessionController
+{
+    /**
+     * Constructor de la clase Signup.
+     */
+    function __construct()
+    {
         parent::__construct();
     }
 
-    function render(){
+    /**
+     * Método para renderizar la vista de registro.
+     */
+    function render()
+    {
         $this->view->errorMessage = '';
         $this->view->render('login/signup');
     }
 
-    function newUser(){
-        if($this->existPOST(['username', 'password'])){
+    /**
+     * Método para registrar un nuevo usuario.
+     */
+    function newUser()
+    {
+        if ($this->existPOST(['username', 'password'])) {
             
             $username = $this->getPost('username');
             $password = $this->getPost('password');
             
-            //validate data
-            if($username == '' || empty($username) || $password == '' || empty($password)){
-                // error al validar datos
-                //$this->errorAtSignup('Campos vacios');
+            // Validar datos
+            if ($username == '' || empty($username) || $password == '' || empty($password)) {
+                // Campos vacíos, redirigir con error
                 $this->redirect('signup', ['error' => Errors::ERROR_SIGNUP_NEWUSER_EMPTY]);
             }
 
@@ -32,21 +43,18 @@ class Signup extends SessionController{
             $user->setPassword($password);
             $user->setRole("user");
             
-            if($user->exists($username)){
-                //$this->errorAtSignup('Error al registrar el usuario. Elige un nombre de usuario diferente');
+            if ($user->exists($username)) {
+                // Usuario ya existe, redirigir con error
                 $this->redirect('signup', ['error' => Errors::ERROR_SIGNUP_NEWUSER_EXISTS]);
-                //return;
-            }else if($user->save()){
-                //$this->view->render('login/index');
+            } else if ($user->save()) {
+                // Usuario registrado con éxito, redirigir con mensaje de éxito
                 $this->redirect('', ['success' => Success::SUCCESS_SIGNUP_NEWUSER]);
-            }else{
-                /* $this->errorAtSignup('Error al registrar el usuario. Inténtalo más tarde');
-                return; */
+            } else {
+                // Error al registrar usuario, redirigir con error
                 $this->redirect('signup', ['error' => Errors::ERROR_SIGNUP_NEWUSER]);
             }
-        }else{
-            // error, cargar vista con errores
-            //$this->errorAtSignup('Ingresa nombre de usuario y password');
+        } else {
+            // Error, cargar vista con errores
             $this->redirect('signup', ['error' => Errors::ERROR_SIGNUP_NEWUSER_EXISTS]);
         }
     }

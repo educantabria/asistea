@@ -21,7 +21,7 @@
                 }
              ?>
             <div id="history-options">
-                <h2>Historial de gastos</h2>
+                <h2>Historial de facturas</h2>
                 <div id="filters-container">
                     <div class="filter-container">
                         <select id="sdate" class="custom-select">

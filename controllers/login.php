@@ -1,55 +1,71 @@
-
 <?php
 
-class Login extends SessionController{
-
-    function __construct(){
+/**
+ * Clase Login que extiende de SessionController.
+ */
+class Login extends SessionController
+{
+    /**
+     * Constructor de la clase Login.
+     */
+    function __construct()
+    {
         parent::__construct();
     }
 
-    function render(){
+    /**
+     * Método para renderizar la vista de login.
+     */
+    function render()
+    {
         $actual_link = trim("$_SERVER[REQUEST_URI]");
         $url = explode('/', $actual_link);
         $this->view->errorMessage = '';
         $this->view->render('login/index');
     }
 
-    function authenticate(){
-        if( $this->existPOST(['username', 'password']) ){
+    /**
+     * Método para autenticar el usuario.
+     */
+    function authenticate()
+    {
+        if ($this->existPOST(['username', 'password'])) {
             $username = $this->getPost('username');
             $password = $this->getPost('password');
 
-            //validate data
-            if($username == '' || empty($username) || $password == '' || empty($password)){
-                //$this->errorAtLogin('Campos vacios');
+            // Validar datos
+            if ($username == '' || empty($username) || $password == '' || empty($password)) {
                 error_log('Login::authenticate() empty');
                 $this->redirect('', ['error' => Errors::ERROR_LOGIN_AUTHENTICATE_EMPTY]);
                 return;
             }
-            // si el login es exitoso regresa solo el ID del usuario
-            
+
+            // Si el inicio de sesión es exitoso, devuelve solo el ID del usuario
             $user = $this->model->login($username, $password);
 
-            if($user != NULL){
-                // inicializa el proceso de las sesiones
-                error_log('Login::authenticate() passed');    
+            if ($user != NULL) {
+                // Inicializa el proceso de las sesiones
+                error_log('Login::authenticate() passed');
                 $this->initialize($user);
-            }else{
-                //error al registrar, que intente de nuevo
-                //$this->errorAtLogin('Nombre de usuario y/o password incorrecto');
+            } else {
+                // Error al autenticar, intentar de nuevo
                 error_log('Login::authenticate() username and/or password wrong');
                 $this->redirect('', ['error' => Errors::ERROR_LOGIN_AUTHENTICATE_DATA]);
                 return;
             }
-        }else{
-            // error, cargar vista con errores
-            //$this->errorAtLogin('Error al procesar solicitud');
+        } else {
+            // Error, cargar vista con errores
             error_log('Login::authenticate() error with params');
             $this->redirect('', ['error' => Errors::ERROR_LOGIN_AUTHENTICATE]);
         }
     }
 
-    function saludo(){
-        
+    /**
+     * Método de ejemplo sin implementar.
+     */
+    function saludo()
+    {
+        // Código de saludo aquí
     }
 }
+

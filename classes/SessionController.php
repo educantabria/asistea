@@ -1,6 +1,6 @@
 <?php
 /**
- * Controlador que también maneja las sesiones
+ * Controlador que maneja las sesiones de usuario.
  */
 class SessionController extends Controller{
     
@@ -8,31 +8,62 @@ class SessionController extends Controller{
     private $username;
     private $userid;
 
+     /**
+     * @var Session Objeto de sesión para gestionar la autenticación del usuario.
+     */
     private $session;
+
+    /**
+     * @var array Lista de sitios configurados en el archivo JSON de acceso.
+     */
     private $sites;
 
+    /**
+     * @var UserModel Objeto de usuario para almacenar los detalles del usuario actual.
+     */
     private $user;
  
+    /**
+     * Constructor de la clase.
+     * Inicializa la clase base y llama al método init().
+     */
     function __construct(){
         parent::__construct();
 
         $this->init();
     }
 
+    /**
+     * Obtiene el objeto de sesión del usuario.
+     *
+     * @return Session Objeto de sesión del usuario.
+     */
     public function getUserSession(){
         return $this->userSession;
     }
 
+    /**
+     * Obtiene el nombre de usuario actual.
+     *
+     * @return string Nombre de usuario actual.
+     */
     public function getUsername(){
         return $this->username;
     }
 
+    /**
+     * Obtiene el ID de usuario actual.
+     *
+     * @return mixed ID de usuario actual.
+     */
     public function getUserId(){
         return $this->userid;
     }
 
     /**
      * Inicializa el parser para leer el .json
+     *
+     * Inicializa el controlador de sesión.
      */
     private function init(){
         //se crea nueva sesión
@@ -48,7 +79,9 @@ class SessionController extends Controller{
         $this->validateSession();
     }
     /**
-     * Abre el archivo JSON y regresa el resultado decodificado
+     * Lee y decodifica el archivo JSON de configuración de acceso.
+     *
+     * @return array Datos decodificados del archivo JSON.
      */
     private function getJSONFileConfig(){
         $string = file_get_contents("config/access.json");
@@ -171,6 +204,11 @@ class SessionController extends Controller{
         return $url[2];
     }
 
+    /**
+     * Realiza la autorización de acceso según el rol del usuario.
+     *
+     * @param string $role Rol del usuario.
+     */
     function authorizeAccess($role){
         error_log("sessionController::authorizeAccess(): role: $role");
         switch($role){
@@ -184,6 +222,9 @@ class SessionController extends Controller{
         }
     }
 
+    /**
+     * Cierra la sesión del usuario.
+     */
     function logout(){
         $this->session->closeSession();
     }

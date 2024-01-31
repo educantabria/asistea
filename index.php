@@ -1,4 +1,5 @@
 <?php
+
 error_reporting(E_ALL); // Error/Exception engine, always use E_ALL
 
 ini_set('ignore_repeated_errors', TRUE); // always use TRUE
@@ -19,12 +20,10 @@ require_once 'libs/view.php';
 require_once 'libs/model.php';
 require_once 'libs/app.php';
 
-
 require_once 'classes/session.php';
 require_once 'classes/sessionController.php';
 require_once 'classes/errors.php';
 require_once 'classes/success.php';
-
 
 require_once 'config/config.php';
 
