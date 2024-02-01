@@ -13,7 +13,7 @@
     
     <div id="header">
         <ul>
-            <li><a href="<?php echo constant('URL'); ?>">Inicio</a></li>
+            <li><a href="<?php echo constant('URL'); ?>">Inicio</a></li>            
             <li><a href="<?php echo constant('URL'); ?>logout">Salir</a></li>            
         </ul>
     </div>

@@ -1,0 +1,131 @@
+[01-Feb-2024 14:16:51 UTC] Inicio de aplicación web!
+[01-Feb-2024 15:16:51 Europe/Madrid] SessionController::validateSession()
+[01-Feb-2024 15:16:51 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[01-Feb-2024 15:16:51 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
+[01-Feb-2024 15:16:51 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/dashboard, url => dashboard
+[01-Feb-2024 15:16:51 Europe/Madrid] sessionController::isPublic(): currentURL => dashboard
+[01-Feb-2024 15:16:51 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/dashboard, url => dashboard
+[01-Feb-2024 15:16:51 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
+[01-Feb-2024 15:16:51 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[01-Feb-2024 15:16:51 Europe/Madrid] Dashboard::constructor() 
+[01-Feb-2024 15:16:51 Europe/Madrid] Dashboard::RENDER() 
+[01-Feb-2024 15:16:51 Europe/Madrid] Dashboard::getExpenses() id = 5
+[01-Feb-2024 15:16:51 Europe/Madrid] ExpensesModel::getByUserIdAndLimit(): count: 5
+[01-Feb-2024 15:16:51 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[01-Feb-2024 15:16:51 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[01-Feb-2024 15:16:51 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[01-Feb-2024 15:16:51 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[01-Feb-2024 15:16:52 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[01-Feb-2024 15:16:52 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[01-Feb-2024 15:16:52 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[01-Feb-2024 15:16:52 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[01-Feb-2024 15:16:52 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[01-Feb-2024 14:16:52 UTC] Inicio de aplicación web!
+[01-Feb-2024 15:16:52 Europe/Madrid] SessionController::validateSession()
+[01-Feb-2024 15:16:52 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[01-Feb-2024 15:16:52 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
+[01-Feb-2024 15:16:52 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses/getExpensesJSON, url => expenses
+[01-Feb-2024 15:16:52 Europe/Madrid] sessionController::isPublic(): currentURL => expenses
+[01-Feb-2024 15:16:52 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses/getExpensesJSON, url => expenses
+[01-Feb-2024 15:16:52 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
+[01-Feb-2024 15:16:52 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[01-Feb-2024 15:16:52 Europe/Madrid] Expenses::constructor() 
+[01-Feb-2024 14:16:55 UTC] Inicio de aplicación web!
+[01-Feb-2024 15:16:55 Europe/Madrid] SessionController::validateSession()
+[01-Feb-2024 15:16:55 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[01-Feb-2024 15:16:55 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
+[01-Feb-2024 15:16:55 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/logout, url => logout
+[01-Feb-2024 15:16:55 Europe/Madrid] sessionController::isPublic(): currentURL => logout
+[01-Feb-2024 15:16:55 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/logout, url => logout
+[01-Feb-2024 15:16:55 Europe/Madrid] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[01-Feb-2024 14:16:55 UTC] Inicio de aplicación web!
+[01-Feb-2024 15:16:55 Europe/Madrid] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\asistea\libs\App.php on line 17
+[01-Feb-2024 15:16:55 Europe/Madrid] SessionController::validateSession()
+[01-Feb-2024 15:16:55 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/, url => 
+[01-Feb-2024 15:16:55 Europe/Madrid] sessionController::isPublic(): currentURL => 
+[01-Feb-2024 15:16:55 Europe/Madrid] SessionController::validateSession() public page
+[01-Feb-2024 15:03:37 UTC] Inicio de aplicación web!
+[01-Feb-2024 16:03:37 Europe/Madrid] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\asistea\libs\App.php on line 17
+[01-Feb-2024 16:03:37 Europe/Madrid] SessionController::validateSession()
+[01-Feb-2024 16:03:37 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/, url => 
+[01-Feb-2024 16:03:37 Europe/Madrid] sessionController::isPublic(): currentURL => 
+[01-Feb-2024 16:03:37 Europe/Madrid] SessionController::validateSession() public page
+[01-Feb-2024 15:03:53 UTC] Inicio de aplicación web!
+[01-Feb-2024 16:03:53 Europe/Madrid] SessionController::validateSession()
+[01-Feb-2024 16:03:53 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/login/authenticate, url => login
+[01-Feb-2024 16:03:53 Europe/Madrid] sessionController::isPublic(): currentURL => login
+[01-Feb-2024 16:03:53 Europe/Madrid] SessionController::validateSession() redirect al login
+[01-Feb-2024 16:03:53 Europe/Madrid] ExistPOST: Existen parámetros
+[01-Feb-2024 16:03:53 Europe/Madrid] login: inicio
+[01-Feb-2024 16:03:54 Europe/Madrid] login: user id 5
+[01-Feb-2024 16:03:54 Europe/Madrid] login: success
+[01-Feb-2024 16:03:54 Europe/Madrid] Login::authenticate() passed
+[01-Feb-2024 16:03:54 Europe/Madrid] sessionController::initialize(): user: asistea
+[01-Feb-2024 16:03:54 Europe/Madrid] sessionController::authorizeAccess(): role: user
+[01-Feb-2024 15:03:54 UTC] Inicio de aplicación web!
+[01-Feb-2024 16:03:54 Europe/Madrid] SessionController::validateSession()
+[01-Feb-2024 16:03:54 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[01-Feb-2024 16:03:54 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
+[01-Feb-2024 16:03:54 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/dashboard, url => dashboard
+[01-Feb-2024 16:03:54 Europe/Madrid] sessionController::isPublic(): currentURL => dashboard
+[01-Feb-2024 16:03:54 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/dashboard, url => dashboard
+[01-Feb-2024 16:03:54 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
+[01-Feb-2024 16:03:54 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[01-Feb-2024 16:03:54 Europe/Madrid] Dashboard::constructor() 
+[01-Feb-2024 16:03:54 Europe/Madrid] Dashboard::RENDER() 
+[01-Feb-2024 16:03:54 Europe/Madrid] Dashboard::getExpenses() id = 5
+[01-Feb-2024 16:03:54 Europe/Madrid] ExpensesModel::getByUserIdAndLimit(): count: 5
+[01-Feb-2024 16:03:54 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[01-Feb-2024 16:03:54 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[01-Feb-2024 16:03:54 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[01-Feb-2024 16:03:54 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[01-Feb-2024 16:03:54 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[01-Feb-2024 16:03:54 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[01-Feb-2024 16:03:54 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[01-Feb-2024 16:03:54 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[01-Feb-2024 16:03:54 Europe/Madrid] ExpensesModel::getTotalByCategoryThisMonth
+[01-Feb-2024 15:03:54 UTC] Inicio de aplicación web!
+[01-Feb-2024 16:03:55 Europe/Madrid] SessionController::validateSession()
+[01-Feb-2024 16:03:55 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[01-Feb-2024 16:03:55 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
+[01-Feb-2024 16:03:55 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses/getExpensesJSON, url => expenses
+[01-Feb-2024 16:03:55 Europe/Madrid] sessionController::isPublic(): currentURL => expenses
+[01-Feb-2024 16:03:55 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses/getExpensesJSON, url => expenses
+[01-Feb-2024 16:03:55 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
+[01-Feb-2024 16:03:55 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[01-Feb-2024 16:03:55 Europe/Madrid] Expenses::constructor() 
+[01-Feb-2024 15:04:02 UTC] Inicio de aplicación web!
+[01-Feb-2024 16:04:02 Europe/Madrid] SessionController::validateSession()
+[01-Feb-2024 16:04:02 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[01-Feb-2024 16:04:02 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
+[01-Feb-2024 16:04:02 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses, url => expenses
+[01-Feb-2024 16:04:02 Europe/Madrid] sessionController::isPublic(): currentURL => expenses
+[01-Feb-2024 16:04:02 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses, url => expenses
+[01-Feb-2024 16:04:02 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
+[01-Feb-2024 16:04:02 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[01-Feb-2024 16:04:02 Europe/Madrid] Expenses::constructor() 
+[01-Feb-2024 16:04:02 Europe/Madrid] Expenses::RENDER() 
+[01-Feb-2024 15:04:02 UTC] Inicio de aplicación web!
+[01-Feb-2024 16:04:02 Europe/Madrid] SessionController::validateSession()
+[01-Feb-2024 16:04:02 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[01-Feb-2024 16:04:02 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
+[01-Feb-2024 16:04:02 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses/getHistoryJSON, url => expenses
+[01-Feb-2024 16:04:02 Europe/Madrid] sessionController::isPublic(): currentURL => expenses
+[01-Feb-2024 16:04:02 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/expenses/getHistoryJSON, url => expenses
+[01-Feb-2024 16:04:02 Europe/Madrid] SessionController::validateSession() => autorizado, lo deja pasar
+[01-Feb-2024 16:04:02 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[01-Feb-2024 16:04:02 Europe/Madrid] Expenses::constructor() 
+[01-Feb-2024 15:05:41 UTC] Inicio de aplicación web!
+[01-Feb-2024 16:05:41 Europe/Madrid] SessionController::validateSession()
+[01-Feb-2024 16:05:41 Europe/Madrid] sessionController::getUserSessionData(): asistea
+[01-Feb-2024 16:05:41 Europe/Madrid] sessionController::validateSession(): username:asistea - role: user
+[01-Feb-2024 16:05:41 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/logout, url => logout
+[01-Feb-2024 16:05:41 Europe/Madrid] sessionController::isPublic(): currentURL => logout
+[01-Feb-2024 16:05:41 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/logout, url => logout
+[01-Feb-2024 16:05:41 Europe/Madrid] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[01-Feb-2024 15:05:41 UTC] Inicio de aplicación web!
+[01-Feb-2024 16:05:41 Europe/Madrid] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\asistea\libs\App.php on line 17
+[01-Feb-2024 16:05:41 Europe/Madrid] SessionController::validateSession()
+[01-Feb-2024 16:05:41 Europe/Madrid] sessionController::getCurrentPage(): actualLink =>/asistea/, url => 
+[01-Feb-2024 16:05:41 Europe/Madrid] sessionController::isPublic(): currentURL => 
+[01-Feb-2024 16:05:41 Europe/Madrid] SessionController::validateSession() public page

@@ -32,17 +32,17 @@
                     <div class="panel">
                         <div class="title">Gastos</div>
                         <div class="datum"><?php echo number_format($stats['max-expenses'], 2, ',', '.').'€'; ?></div>
-                        <div class="description">Gasto máximo</div>
+                        <div class="description">Minuta mayor importe</div>
                     </div>
                     <div class="panel">
                         <div class="title">Gastos</div>
                         <div class="datum"><?php echo number_format($stats['avg-expenses'], 2, ',', '.').'€'; ?></div>
-                        <div class="description">Gasto promedio</div>
+                        <div class="description">Promedio minutas</div>
                     </div>
                     <div class="panel">
                         <div class="title">Gastos</div>
                         <div class="datum"><?php echo number_format($stats['min-expenses'], 2, ',', '.').'€';   ?></div>
-                        <div class="description">Gasto mínimo</div>
+                        <div class="description">Minuta mínima</div>
                     </div>
                     <div class="panel">
                         <div class="title">Categorías</div>
@@ -75,6 +75,6 @@
             </div>
         </div>
     </div>
-    <script src="public/js/admin.js"></script>
+    <script src="public/js/admin.js"></script>    
 </body>
 </html>
