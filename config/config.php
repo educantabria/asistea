@@ -9,7 +9,7 @@ define('URL', 'http://localhost/asistea/');
 
 // Configuración de la base de datos
 define('HOST', 'localhost');
-define('DB', 'expense-app');
+define('DB', 'asistea');
 define('USER', 'root');
 define('PASSWORD', "");
 define('CHARSET', 'utf8mb4');

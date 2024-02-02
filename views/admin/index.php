@@ -25,24 +25,24 @@
                         <div class="description">Usuarios registrados</div>
                     </div>
                     <div class="panel">
-                        <div class="title">Gastos</div>
+                        <div class="title">Transacciones</div>
                         <div class="datum"><?php echo $stats['count-expenses']; ?></div>
                         <div class="description">Transacciones</div>
                     </div>
                     <div class="panel">
-                        <div class="title">Gastos</div>
+                        <div class="title">Importe</div>
                         <div class="datum"><?php echo number_format($stats['max-expenses'], 2, ',', '.').'€'; ?></div>
-                        <div class="description">Minuta mayor importe</div>
+                        <div class="description">Mayor importe</div>
                     </div>
                     <div class="panel">
-                        <div class="title">Gastos</div>
+                        <div class="title">Importe</div>
                         <div class="datum"><?php echo number_format($stats['avg-expenses'], 2, ',', '.').'€'; ?></div>
-                        <div class="description">Promedio minutas</div>
+                        <div class="description">Promedio</div>
                     </div>
                     <div class="panel">
-                        <div class="title">Gastos</div>
+                        <div class="title">Importe</div>
                         <div class="datum"><?php echo number_format($stats['min-expenses'], 2, ',', '.').'€';   ?></div>
-                        <div class="description">Minuta mínima</div>
+                        <div class="description">Menor importe</div>
                     </div>
                     <div class="panel">
                         <div class="title">Categorías</div>
