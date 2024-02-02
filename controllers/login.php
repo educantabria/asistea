@@ -59,13 +59,6 @@ class Login extends SessionController
             $this->redirect('', ['error' => Errors::ERROR_LOGIN_AUTHENTICATE]);
         }
     }
-
-    /**
-     * Método de ejemplo sin implementar.
-     */
-    function saludo()
-    {
-        // Código de saludo aquí
-    }
+   
 }
 
